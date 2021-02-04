@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="User Sign Up"
+        android:textColor="#D84242"
+        android:textSize="24dp"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Name"
+        android:background="@drawable/editext"
+        android:textColor="#C5C2C2"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editName"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email"
+        android:background="@drawable/editext"
+        android:textColor="#C5C2C2"
+        android:ems="10"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editEmail"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="#C5C2C2"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/editPassword"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editPassword"
+        android:textStyle="bold"
+        android:textColor="#050000"
+        android:textSize="26sp"
+        android:background="@drawable/background4"
+        android:layout_marginTop="40dp"
+        android:text="SIGN UP" />
+
+    <!-- <TextView
+         android:id="@+id/loginText_id"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonLogin"
+         android:layout_marginTop="370dp"
+         android:textSize="20sp"
+         android:textColor="#FFFCFC"
+         android:text="Already Registered? | LOG ME" />-->
+
+    <TextView
+        android:id="@+id/regi_log_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="45dp"
+        android:textSize="20sp"
+        android:textColor="#FFFCFC"
+        android:text="Already Registered?LOG ME" />
+
+
+</RelativeLayout>

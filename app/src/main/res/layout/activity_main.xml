@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="User Login "
+        android:textColor="#D84242"
+        android:textSize="24dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/editext"
+        android:hint="Enter Email"
+        android:textColor="#C5C2C2"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editEmail"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="#C5C2C2"
+        android:background="@drawable/editext"
+        android:ems="10"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/editPassword"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="35dp"
+
+
+
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/editPassword"
+        android:textStyle="bold"
+        android:textColor="#050000"
+        android:textSize="26sp"
+        android:background="@drawable/background4"
+        android:text="Log IN "/>
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="45dp"
+        android:textSize="20sp"
+        android:textColor="#FFFCFC"
+        android:text="Not a Member?  SIGN UP NOW" />
+
+</RelativeLayout>
